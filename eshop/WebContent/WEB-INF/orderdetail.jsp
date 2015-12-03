@@ -87,7 +87,7 @@
 								color="#FFFFFF">购买数量</font></td>
 						</tr>
 						<!-- 订单商品列表 -->
-						<c:forEach items="${order.orderdetails }" var="orderdetails">
+                        <c:forEach items="${order.orderdetails }" var="orderdetails">
 						<tr align="center" valign="middle">
 							<td height="24" bgcolor="#D9D9DB">${orderdetails.productId}</td>
 							<td height="24" bgcolor="#D9D9DB">${orderdetails.productName}</td>

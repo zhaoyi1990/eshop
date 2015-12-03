@@ -96,7 +96,6 @@ public class OrderdetailAction implements Serializable {
 		List<Orderdetails> orderdetails = MysqlUtil.queryForObjectList(Orderdetails.class,
 				"orderId=" + order1.getOrderId());
 		order1.setOrderdetails(orderdetails);
-		
 		ActionContext.getContext().put("order", order1);
 
 		return Action.SUCCESS;

@@ -373,8 +373,7 @@ public class MysqlUtil {
 		sb.deleteCharAt(sb.length() - 1);
 
 		sb.append(")");
-
-		System.out.println(sb.toString());
+		Log4jUtil.info("sql="+sb.toString());
 
 		// 使用连接对象创建带参数的命令语句对象
 		Connection cnn = null;
@@ -520,8 +519,7 @@ public class MysqlUtil {
 		// 构建where语句
 		sb.append(" where ").append(whereField2ValueMap.keySet().iterator().next());
 		sb.append("=?");
-
-		System.out.println(sb);
+		Log4jUtil.info("sql="+sb.toString());
 
 		// 使用连接与语句对象
 		Connection cnn = null;
@@ -612,7 +610,7 @@ public class MysqlUtil {
 
 		}
 
-		System.out.println(sb);
+		Log4jUtil.info("sql="+sb.toString());
 
 		Connection cnn = null;
 		Statement stmt = null;
@@ -673,7 +671,7 @@ public class MysqlUtil {
 			sb.delete(sb.length() - 5, sb.length());
 
 		}
-		System.out.println(sb);
+		Log4jUtil.info("sql="+sb.toString());
 		// 进行查询操作
 		Connection cnn = null;
 		Statement stmt = null;
@@ -885,8 +883,7 @@ public class MysqlUtil {
 		sb.deleteCharAt(sb.length() - 1);
 
 		sb.append(")");
-
-		System.out.println(sb.toString());
+		Log4jUtil.info("sql="+sb.toString());
 
 		// 使用连接对象创建带参数的命令语句对象
 		Connection cnn = null;
